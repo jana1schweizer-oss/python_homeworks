@@ -1,7 +1,17 @@
-alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
-# task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
+alice_in_wonderland = """
+'Would you tell me, please,
+which way I ought to go
+from here?'
+"""
+
+
 # task 02 == Знайдіть та відобразіть всі символи одинарної лапки (') у тексті
+print(alice_in_wonderland.count("'"))
+
 # task 03 == Виведіть змінну alice_in_wonderland на друк
+print(alice_in_wonderland)
+
+
 
 
 """
@@ -16,6 +26,10 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 моря становить 37 800 км2. Яку площу займають Чорне та Азов-
 ське моря разом?
 """
+black_sea = 436402
+azov_sea = 37800
+total_area = black_sea + azov_sea
+print("Разом Чорне та Азовське моря займають", total_area, "квадратних кілометрів.")
 
 
 # task 05
@@ -26,6 +40,17 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 Знайдіть кількість товарів, що розміщені на кожному складі.
 """
 
+total = 375291
+first_second = 250449
+second_third = 222950
+
+B = first_second + second_third - total
+A = first_second - B
+C = second_third - B
+
+print("На першому складі:", A)
+print("На другому складі:", B)
+print("На третьому складі:", C)
 
 # task 06
 """
@@ -35,6 +60,12 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 вартість комп’ютера.
 """
 
+months = 18
+monthly_payment = 1179
+
+total_price = months * monthly_payment
+
+print("Вартість комп'ютера становить", total_price, "грн.")
 
 # task 07
 """
@@ -43,6 +74,12 @@ a) 8019 : 8     d) 7248 : 6
 b) 9907 : 9     e) 7128 : 5
 c) 2789 : 5     f) 19224 : 9
 """
+print("a) 8019 % 8 =", 8019 % 8)
+print("b) 9907 % 9 =", 9907 % 9)
+print("c) 2789 % 5 =", 2789 % 5)
+print("d) 7248 % 6 =", 7248 % 6)
+print("e) 7128 % 5 =", 7128 % 5)
+print("f) 19224 % 9 =", 19224 % 9)
 
 
 # task 08
@@ -57,6 +94,15 @@ c) 2789 : 5     f) 19224 : 9
 Торт            1           350 грн
 Вода            3           21 грн
 """
+big_pizza = 4 * 274
+medium_pizza = 2 * 218
+juice = 4 * 35
+cake = 1 * 350
+water = 3 * 21
+
+total_cost = big_pizza + medium_pizza + juice + cake + water
+
+print("Загальна сума замовлення Іринки становить", total_cost, "грн.")
 
 
 # task 09
@@ -66,6 +112,12 @@ c) 2789 : 5     f) 19224 : 9
 розміщено щонайбільше 8 фото. Скільки сторінок знадобиться
 Ігорю, щоб вклеїти всі фото?
 """
+photos = 232
+per_page = 8
+
+pages = (photos + per_page - 1) // per_page
+
+print("Ігорю потрібно", pages, "сторінок для всіх фотографій.")
 
 
 # task 10
@@ -79,3 +131,16 @@ c) 2789 : 5     f) 19224 : 9
 равку під час цієї подорожі, кожного разу заправляючи пов-
 ний бак?
 """
+distance = 1600
+fuel_per_100 = 9
+tank_capacity = 48
+
+# 1) Загальна витрата бензину
+total_fuel = (distance / 100) * fuel_per_100
+
+# 2) Кількість заправок
+refuels = total_fuel / tank_capacity
+
+print("1) Для подорожі потрібно", total_fuel, "літрів бензину.")
+print("2) Родині потрібно заїхати на заправку щонайменше", int(refuels), "рази.")
+
