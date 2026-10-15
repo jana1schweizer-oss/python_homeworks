@@ -1,4 +1,0 @@
-2026-09-07 10:35:06,904 - ERROR - \u0424\u0430\u0439\u043b json_schweizer.log \u043d\u0435\u0432\u0430\u043b\u0456\u0434\u043d\u0438\u0439: Expecting value: line 1 column 1 (char 0)
-2026-09-07 10:35:06,907 - ERROR - \u0424\u0430\u0439\u043b login.json \u043d\u0435\u0432\u0430\u043b\u0456\u0434\u043d\u0438\u0439: Expecting ',' delimiter: line 8 column 1 (char 324)
-2026-09-07 10:38:46,769 - ERROR - \u0424\u0430\u0439\u043b json_schweizer.log \u043d\u0435\u0432\u0430\u043b\u0456\u0434\u043d\u0438\u0439: Extra data: line 1 column 5 (char 4)
-2026-09-07 10:38:46,771 - ERROR - \u0424\u0430\u0439\u043b login.json \u043d\u0435\u0432\u0430\u043b\u0456\u0434\u043d\u0438\u0439: Expecting ',' delimiter: line 8 column 1 (char 324)
